@@ -1,0 +1,11 @@
+{
+  "manifest_version": 2,
+ 
+  "name": "Greenhouse Content Validator",
+  "version": "0.1.0",
+  "description": "Prevents you from submitting unless you've written enough.",
+  "content_scripts": [{
+    "js": ["validate.js"],
+    "matches": ["*://app.greenhouse.io/guides/*"]
+  }]
+}
